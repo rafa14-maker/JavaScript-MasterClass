@@ -1,0 +1,10 @@
+ .popo{
+     font-size: 3rem;
+     color: tomato;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ p{
+    display: block;
+    font-size: 1.5rem;
+ }
