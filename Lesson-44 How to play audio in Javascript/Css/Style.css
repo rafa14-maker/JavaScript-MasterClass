@@ -1,0 +1,20 @@
+button {
+    height : 150px;
+    width : 150px;
+    margin-left: 50px;
+    margin-top: 50px;
+    font-size: 3rem;
+    color: aliceblue;
+}
+
+.btn-1 {
+    background-color: blue;
+}
+
+.btn-2 {
+    background-color: tomato;
+}
+
+.btn-3 {
+    background-color:brown;
+}
