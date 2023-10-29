@@ -1,0 +1,10 @@
+div{
+    background-color: tomato;
+    height : 100px;
+    width : 200px;
+    text-align: center;
+    color: aliceblue;
+    font-style: unset;
+    text-transform:capitalize;
+    padding-top: 50px;
+}
