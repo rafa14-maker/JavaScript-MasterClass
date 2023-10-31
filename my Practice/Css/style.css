@@ -1,3 +1,16 @@
 #pk{
    font-size: 2rem;
 }
+
+.callfor{
+   height : 150px;
+   width: 150px;
+}
+
+.pi-1 {
+   background-color: tomato;
+}
+
+.pi-2 {
+   background-color: cadetblue;
+}
