@@ -1,4 +1,29 @@
-console.log(window);
+console.clear();
+
+const makeRequest = (url,method,data) => {
+    const xhr = new XMLHttpRequest();
+    xhr.open(method,url);
+    xhr.setRequestHeader('content-Type' , 'application/json');
+    xhr.onload = () =>{
+        let data = xhr.response ; 
+        console.log(JSON.parse(data));
+    }
+    xhr.onerror = () =>{
+        console.log('error is here');
+    }
+
+    xhr.send(JSON.stringify(data));
+}
+
+const getDate = () =>{
+    makeRequest('https://jsonplaceholder.typicode.com/posts','GET');
+}
+
+
+
+getDate();
+
+
 
 // document.querySelector('button').addEventListener('click',function() {
 //     location.assign("https://classroom.google.com/c/NjM1OTcwNjUzMDQx")
@@ -14,42 +39,42 @@ console.log(window);
 
 // console.log("hello");
 
-let p = document.createElement('p');
-document.body.append(p);
+// let p = document.createElement('p');
+// document.body.append(p);
 
-function less(a){
-    if(a < 10)return '0'+a;
-    else return a;
-}
+// function less(a){
+//     if(a < 10)return '0'+a;
+//     else return a;
+// }
 
-function koko(){
-    let date = new Date();
-    // console.log(date);
-    let min = date.getMinutes();
-    min = less(min);
-    let hour = date.getHours();
-    hour = less(hour);
-    let sec = date.getSeconds();
-    sec = less(sec);
-    let text = hour + ':' + min + ':' +sec;
-    p.innerHTML = text;
-}
+// function koko(){
+//     let date = new Date();
+//     // console.log(date);
+//     let min = date.getMinutes();
+//     min = less(min);
+//     let hour = date.getHours();
+//     hour = less(hour);
+//     let sec = date.getSeconds();
+//     sec = less(sec);
+//     let text = hour + ':' + min + ':' +sec;
+//     p.innerHTML = text;
+// }
 
-document.querySelector('button').addEventListener('click',function () {
-        setInterval(() => {
-            koko();
-        }, 1000);    
-})
+// document.querySelector('button').addEventListener('click',function () {
+//         setInterval(() => {
+//             koko();
+//         }, 1000);    
+// })
 
 
 
-let arr = [10,20,30,50,60,70];
+// let arr = [10,20,30,50,60,70];
 
-let [num1,num2,num3,...num4] = arr;
+// let [num1,num2,num3,...num4] = arr;
 
-[num3,num4] = [num4,num3];
+// [num3,num4] = [num4,num3];
 
-console.log(num4);
+// console.log(num4);
 
 
 
