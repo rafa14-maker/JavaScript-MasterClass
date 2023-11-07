@@ -1,27 +1,84 @@
-console.clear();
+// Initialize 
 
-const makeRequest = (url,method,data) => {
-    const xhr = new XMLHttpRequest();
-    xhr.open(method,url);
-    xhr.setRequestHeader('content-Type' , 'application/json');
-    xhr.onload = () =>{
-        let data = xhr.response ; 
-        console.log(JSON.parse(data));
-    }
-    xhr.onerror = () =>{
-        console.log('error is here');
-    }
+const card = document.querySelector(".card");
+const cardAddTaskButton = card.querySelector('button');
+const cardInput = card.querySelector('input');
+const cardList = document.querySelector('.card-list');
+let count = 0;
 
-    xhr.send(JSON.stringify(data));
-}
+//function 
 
-const getDate = () =>{
-    makeRequest('https://jsonplaceholder.typicode.com/posts','GET');
+const genId = () =>{
+    return ++count;
 }
 
 
+const addListItem = (event) =>{
+    event.preventDefault();
 
-getDate();
+    const ElementLi = document.createElement('li');
+
+    // ElementLi.id.add(genId());
+
+    console.log(ElementLi.id);
+
+    ElementLi.innerHTML = `
+    <p class='card-p'>${cardInput.value}</p>
+    <button class="card-list-button"> <i class="fa-solid fa-trash-can card-list-icon"></i></button>
+    `;
+
+    ElementLi.classList.add('card-list-item');
+    
+    cardList.appendChild(ElementLi);
+    console.log(ElementLi);
+}
+
+// Action 
+
+cardAddTaskButton.addEventListener('click',addListItem)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// console.clear();
+
+// const makeRequest = (url,method,data) => {
+//     const xhr = new XMLHttpRequest();
+//     xhr.open(method,url);
+//     xhr.setRequestHeader('content-Type' , 'application/json');
+//     xhr.onload = () =>{
+//         let data = xhr.response ; 
+//         console.log(JSON.parse(data));
+//     }
+//     xhr.onerror = () =>{
+//         console.log('error is here');
+//     }
+
+//     xhr.send(JSON.stringify(data));
+// }
+
+// const getDate = () =>{
+//     makeRequest('https://jsonplaceholder.typicode.com/posts','GET');
+// }
+
+
+
+// getDate();
 
 
 

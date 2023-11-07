@@ -1,4 +1,113 @@
-#pk{
+*{
+   margin : 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.container {
+   background-color:darkseagreen;
+   height: 100vh;
+   width: 100vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.card{
+   height: 70vh;
+   width: 50vw;
+   background-color:darkcyan;
+   border-radius: 5%;
+   padding: 2rem;
+}
+
+.card-title{
+   font-size: 3rem;
+   color: aliceblue;
+   text-align: center;
+   margin-bottom: 1.5rem;
+}
+
+.card-form{
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.card-form label{
+   font-size: 1.3rem;
+   color : aliceblue;
+}
+
+.card-form input{
+   width : 25vw;
+   height : 3vh;
+   padding: 4px;
+}
+
+.card-form button{
+      width : 7vw;
+      border: 2px solid wheat;
+      border-radius: 6%;
+      cursor: pointer;
+      background-color: coral;
+      color: aliceblue;
+}
+
+button:hover{
+   transform: scale(1.08);
+   transition: all 0.4s;
+   background-color: darkgoldenrod;
+}
+
+ .card-list-item{
+   list-style: none;
+   border: 1px solid  white;
+   color:crimson;
+   margin-top: 10px;
+   height : 5vh;
+   padding: 5px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color:darkseagreen;
+   font-size: 1.3rem;
+   padding-left: 20px;
+   padding-right: 10px;
+   border-radius: 10px;
+}
+
+ .card-list-button{
+   height : 4vh;
+   width : 4vw;
+   border-radius: 20%;
+}
+
+ .card-list-icon{
+   height : 2vh;
+   width : 2vw;
+}
+
+ .card-list-button:hover{
+   background-color: brown;
+   animation-name : hello;
+   animation-duration: 4s;
+   animation-delay: 0.3s;
+   animation-iteration-count: infinite;
+}
+
+
+
+@keyframes hello {
+  0% , 100%{
+   transform: rotateZ(0deg);
+  }
+  50%{
+   transform: rotateZ(180deg);
+  }
+}
+
+
+/* #pk{
    font-size: 2rem;
 }
 
@@ -12,5 +121,7 @@
 }
 
 .pi-2 {
-   background-color: cadetblue;
+   background-color: cadetblue; 
 }
+
+*/

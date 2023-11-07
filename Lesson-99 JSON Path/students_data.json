@@ -1,0 +1,48 @@
+{
+    "students_data": [
+      {
+        "name": "rafayet",
+        "middleName": "Hossain",
+        "age": 26,
+        "cgpa": 3.56,
+        "isRegisterted": true,
+        "language": [
+          "bengali",
+          "english",
+          "hindi"
+        ],
+        "friends": [
+          {
+            "name": "anwar",
+            "age": 25
+          },
+          {
+            "name": "ruhul",
+            "age": 28
+          }
+        ]
+      },
+      {
+        "name": "fahim",
+        "middleName": "khan",
+        "age": 26,
+        "cgpa": 3.56,
+        "isRegisterted": true,
+        "language": [
+          "bengali",
+          "english",
+          "hindi"
+        ],
+        "friends": [
+          {
+            "name": "kpkc",
+            "age": 25
+          },
+          {
+            "name": "chemistry",
+            "age": 28
+          }
+        ]
+      }
+    ]
+  }
